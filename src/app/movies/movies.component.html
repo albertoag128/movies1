@@ -1,0 +1,15 @@
+<div id="header">
+  <h2 id="title">Angular Movies</h2>
+  <img src="../../assets/Image/moviesicon.png" id="logo">
+</div>
+
+<div id="container">
+  <div class="item" *ngFor="let item of movies" (click)="onSelect(item)">
+    <img src="{{item.Poster}}">
+    <h5>{{item.Title}}</h5>
+    <h5>{{item.Year}}</h5>
+    <p><i>{{item.Genre}}</i></p>
+    <p>{{item.Actors}}</p>
+    <p>{{item.Plot}}</p>
+  </div>
+</div>
